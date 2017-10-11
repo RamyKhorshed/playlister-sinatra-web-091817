@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hey Guys!</title>
+  </head>
+
+  <body>
+
+    <h1>Hello!</h1>
+    <p>This is our showsongs.erb page</p>
+
+    <% @songs.each do |song| %>
+    <ul>
+      <a href='/show/<%= song.id %>'><li><%=song.name%></li></a>
+    </ul>
+    <% end %>
+  </body>
+</html>
